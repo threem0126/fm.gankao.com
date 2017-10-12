@@ -10,7 +10,7 @@ import bodyParser from 'body-parser';
 import compression from 'compression';
 import _config from './config'
 
-const port = parseInt(process.env.PORT, 10) || 8011
+const port = parseInt(process.env.PORT, 10) || 8012
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
