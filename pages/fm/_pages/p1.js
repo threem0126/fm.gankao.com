@@ -4,10 +4,13 @@ import W from './../../../lib/WEUI'
 import * as types from './../../../constants'
 import * as UIshell from './../../_components/UIshell'
 
+
+
 export default class extends React.Component {
     constructor(props) {
         super(props);
     }
+
 
     handlePayEnterClick = () => {
         UIshell.showDialog({
@@ -36,7 +39,7 @@ export default class extends React.Component {
 
     render = () => {
         return <div style={{padding:'50px'}}>
-            <h2>P1</h2>
+            <h2>P1--</h2>
             <W.Button onClick={this.handlePayEnterClick}>点我</W.Button>
             <Link to="/">Back</Link>
         </div>

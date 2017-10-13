@@ -3,7 +3,9 @@ import * as UIshell from './../_components/UIshell'
 import {Router,Route,hashHistory} from 'react-router'
 import home from './_pages/home';
 import p1 from './_pages/p1';
-import p2 from './_pages/p2';
+import CommentList from './_pages/CommentList';
+import ReplyComment from './_pages/ReplyComment';
+import FmList from './_pages/FmList';
 
 export default class extends React.Component {
     // pathname - path section of URL
@@ -29,7 +31,9 @@ export default class extends React.Component {
         return <Router history={hashHistory}>
             <Route path="/" component={home}>
                 <Route path="/p1" component={p1} />
-                <Route path="/p2" component={p2}/>
+                <Route path="/CommentList" component={CommentList}/>
+                <Route path="/ReplyComment" component={ReplyComment}/>
+                <Route path="/FmList" component={FmList}/>
             </Route>
         </Router>
     }

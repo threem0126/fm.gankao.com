@@ -52,6 +52,7 @@ export default class extends Document {
                     return <link rel="stylesheet" href={itemUrl}/>
                 })}
                 <link rel='stylesheet' href='/stylesheets/style.css'/>
+                <link rel='stylesheet' href='/stylesheets/fm.css'/>
                 {this.props.styleTags}
             </Head>
             <body onSelect="return false;" onSelectStart="return false;">
